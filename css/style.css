@@ -1,0 +1,108 @@
+:root {
+  --light-color: #7ed56f; /*126,213,111*/
+  --medium-color: #55c57a; /*85,197,122*/
+  --dark-color: #28b485; /*40,180,133*/
+ --
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-color: var(--light-color);
+  background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)),
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+
+}
+
+
+.logo {
+
+    position:absolute;
+    top:40px;
+    left:40px;
+    width: 60px;
+   }
+
+.logo img {
+    width:50px;
+}
+.nav {
+position: absolute;
+right: 40px;
+top:40px;
+}
+
+.text-box {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backface-visibility: hidden; /*To eliminate the weird shaking*/
+}
+
+.header-primary-main {
+    color:white;
+    text-transform:uppercase;
+    letter-spacing: 36px;
+    display: block;
+    font-size:60px;
+    font-weight: 700;
+    animation: slide-l 1s ease-in forwards;
+}
+
+.header-subtitle {
+    font-size: 20px;
+    text-transform:uppercase;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-align: center;
+    color:white;
+    animation: slide-r 1s ease-in-out forwards;
+    
+}
+
+@keyframes slide-l {
+    0% {
+        opacity:0;
+        transform: translateX(-100%);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100% {
+        opacity:1;
+        transform: none;
+    }
+}
+
+@keyframes slide-r {
+    0% {
+        opacity:0;
+        transform: translateX(100%);
+    }
+    80%{
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity:1;
+        transform: none;
+    }
+
+}
