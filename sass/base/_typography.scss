@@ -1,0 +1,32 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $medium-gray;
+  padding: 3rem;
+}
+.heading-primary {
+  color: $white;
+  text-transform: uppercase;
+
+  &--main {
+    letter-spacing: 3.5rem;
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    animation: slide-l 1s ease-in forwards;
+  }
+
+  &--sub {
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    text-align: center;
+    color: $white;
+    animation: slide-r 1s ease-in-out forwards;
+    margin-bottom: 3.5rem;
+  }
+}
