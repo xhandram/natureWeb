@@ -1,0 +1,22 @@
+{
+  "name": "nature",
+  "version": "1.0.0",
+  "description": "nature website",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xhandram/natureWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xhandram/natureWeb/issues"
+  },
+  "homepage": "https://github.com/xhandram/natureWeb#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
