@@ -30,3 +30,36 @@ body {
     margin-bottom: 3.5rem;
   }
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $light-color, $dark-color);
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent;
+  letter-spacing: 2px;
+  transition: all 0.3s ;
+
+  &:hover {
+    transform: skewY(-2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($black, 0.8);
+  }
+  
+}
+
+.heading-tertiary{
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+
+.paragraph{
+  font-size: 1.6rem;
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+}
