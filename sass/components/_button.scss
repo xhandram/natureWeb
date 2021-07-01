@@ -49,3 +49,27 @@
     }
   }
 }
+
+.btn-text {
+  &:link,
+  &:visited {
+    color: $medium-color;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $medium-color;
+    padding: 3px;
+    transition: all 0.3s;
+    font-size: $default-font;
+  }
+
+  &:hover {
+    background-color: $dark-color;
+    color: white;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.2rem);
+  }
+
+  &:active {
+    transform: translateY(0.2rem);
+  }
+}

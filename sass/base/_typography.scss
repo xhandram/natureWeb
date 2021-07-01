@@ -39,27 +39,25 @@ body {
   display: inline-block;
   background-clip: text;
   -webkit-background-clip: text;
-  color:transparent;
+  color: transparent;
   letter-spacing: 2px;
-  transition: all 0.3s ;
+  transition: all 0.3s;
 
   &:hover {
-    transform: skewY(-2deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba($black, 0.8);
+    transform: skewY(1deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
   }
-  
 }
 
-.heading-tertiary{
-  font-size: 2rem;
+.heading-tertiary {
+  font-size: $default-font;
   font-weight: 700;
   text-transform: uppercase;
-  
 }
 
-.paragraph{
-  font-size: 1.6rem;
-  &:not(:last-child){
+.paragraph {
+  font-size: $default-font;
+  &:not(:last-child) {
     margin-bottom: 3rem;
   }
 }
