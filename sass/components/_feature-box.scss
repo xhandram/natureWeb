@@ -4,11 +4,16 @@
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 2.5rem 4rem rgba($black, 0.6);
+  box-shadow: 0 5rem 40px rgba($black, 0.5);
 
   &__icon {
-    font-size: 3rem;
+    font-size: 8rem;
+    background-image: linear-gradient(to right bottom, rgba($medium-color, 0.8), rgba($dark-color, 0.5));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
+
   &__text {
     font-size: $default-font;
   }
