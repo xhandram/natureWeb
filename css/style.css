@@ -378,6 +378,32 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 3rem 6rem rgba(68, 68, 68, 0.1);
+  border-radius: 4px;
+  padding: 4rem;
+  padding-left: 4rem;
+  font-size: 1.6rem;
+  transform: skewX(-6deg); }
+  .story > * {
+    transform: skewX(6deg); }
+  .story__shape {
+    width: 12rem;
+    height: 12rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-1rem); }
+  .story__img {
+    width: 100%; }
+    .story__img:hover {
+      transform: scale(-0.8); }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0rem;
@@ -394,5 +420,11 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
+  padding: 25rem 0 12rem 0;
+  margin-top: -10vh; }
+
+.section-stories {
+  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/nat-5.jpg");
+  background-size: cover;
   padding: 25rem 0 12rem 0;
   margin-top: -10vh; }
