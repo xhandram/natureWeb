@@ -29,6 +29,7 @@
   &__img {
     height: 100%;
     transform: translateX(-5rem) scale(1.2);
+    transition: all 0.3s;
   }
 
   &__caption {
@@ -50,6 +51,7 @@
 
   &:hover &__img {
     filter: blur(2px);
+    transform: translateX(-5rem) scale(1);
   }
 
   &__text {

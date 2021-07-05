@@ -402,7 +402,8 @@ body {
     transform: translateX(-1rem); }
   .story__img {
     height: 100%;
-    transform: translateX(-5rem) scale(1.2); }
+    transform: translateX(-5rem) scale(1.2);
+    transition: all 0.3s; }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -417,7 +418,8 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .story:hover .story__img {
-    filter: blur(2px); }
+    filter: blur(2px);
+    transform: translateX(-5rem) scale(1); }
 
 .section-about {
   background-color: #f7f7f7;
