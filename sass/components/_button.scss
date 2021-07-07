@@ -42,7 +42,7 @@
 
   &--white {
     background-color: white;
-    color: $medium-gray;
+    color: $color-grey-medium;
 
     &::after {
       background-color: $white;
@@ -61,7 +61,7 @@
 .btn-text {
   &:link,
   &:visited {
-    color: $medium-color;
+    color: $color-grey-medium;
     display: inline-block;
     text-decoration: none;
     border-bottom: 1px solid $medium-color;
