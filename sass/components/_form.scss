@@ -56,5 +56,41 @@
   &__radio-label {
     font-size: $default-font-size;
     cursor: pointer;
+    position: relative;
+    padding-left: 4rem;
   }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid $medium-color;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -.4rem;
+
+    &::after{
+      content: "";
+      background-color: $medium-color;
+      display: block;
+      height: 1.2rem;
+      width: 1.2rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      opacity: 0;
+    }
+  }
+
+  &__radio-input:checked + &__radio-label  &__radio-button::after{
+    opacity: 1;
+  }
+
 }
