@@ -50,6 +50,47 @@
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * (4em)) / 4) + (4em * 2)); }
 
+.footer {
+  background-color: #222;
+  padding: 10rem 0;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    display: block;
+    text-align: center;
+    margin-bottom: 5rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+    display: inline-block; }
+    .footer__navigation-list {
+      list-style: none; }
+    .footer__navigation-item {
+      display: inline-block; }
+      .footer__navigation-item:not(:last-child) {
+        margin-right: 1.5rem; }
+      .footer__navigation-item-link:link, .footer__navigation-item-link:visited {
+        color: #eee;
+        background-color: #222;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        transition: all 0.2s; }
+      .footer__navigation-item-link:hover, .footer__navigation-item-link:active {
+        color: #55c57a;
+        box-shadow: 0 1rem 2rem rgba(68, 68, 68, 0.4);
+        transform: rotate(4deg) scale(1.1); }
+  .footer__link:link, .footer__link:visited {
+    color: #eee;
+    text-decoration: none; }
+  .footer__copyright {
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+    width: 80%;
+    float: right; }
+
 @keyframes slide-l {
   0% {
     opacity: 0;
