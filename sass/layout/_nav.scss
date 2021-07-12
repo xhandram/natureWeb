@@ -94,7 +94,7 @@
     position: relative;
     margin-top: 34px;
     margin-left: 2rem;
-    transition: transform 0.2s;
+
     &,
     &::before,
     &::after {
@@ -109,6 +109,7 @@
       content: "";
       position: absolute;
       left: 0;
+      transition: transform 0.2s;
     }
     &::after {
       top: 0.8rem;
